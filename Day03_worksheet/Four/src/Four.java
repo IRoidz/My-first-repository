@@ -22,7 +22,7 @@ public class Four {
             System.out.println("The result is: " + result);
 
         } else if (expression.contains("/")) {
-            String[] division = expression.split("\\/");
+            String[] division = expression.split("/");
             double result = Double.parseDouble(division[0]) / Double.parseDouble(division[1]);
             System.out.println("The result is: " + result);
 
