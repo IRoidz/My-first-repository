@@ -9,5 +9,7 @@ public class Thirteen {
         double money = scan.nextDouble();
 
         double change = money - totalCost;
+
+        //todo
     }
 }
