@@ -25,5 +25,6 @@ public class Twelve {
             prevLetters += letter;
             System.out.println("There are " + counter + " in your text.");
         }
+        System.out.println("Thank you for your cooperation. Good bye!");
     }
 }
