@@ -60,6 +60,18 @@ public class Matrix {
         }
         return this.matrix;
     }
+    public boolean isSymmetric(int[] arr) {
+        MatrixChecker checker = new MatrixChecker();
+        return checker.isSymmetric(arr);
+    }
+    public boolean isSymmetric(int[][] arr) {
+        MatrixChecker checker = new MatrixChecker();
+        return checker.isSymmetric(arr);
+    }
+    public boolean isTriangular(int[][] arr) {
+        MatrixChecker checker = new MatrixChecker();
+        return checker.isTriangular(arr);
+    }
 }
 
 
