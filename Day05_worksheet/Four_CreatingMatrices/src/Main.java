@@ -1,18 +1,14 @@
 public class Main {
     public static void main(String[] args) {
+        Matrix arr = new Matrix(3, 3);
 
-        int[][] test = new int[3][3];
-        test[2][0] = 1;
-        test[1][0] = 23;
-        test[0][0] = 1;
+        arr.setElement(0, 2, 10);
+        arr.setRow(1, "23,15,9");
+        arr.setColumn(2, "12,4,19");
 
-        for (int i = 0; i < test.length; i++) {
-            for (int j = 0; j < test[i].length; j++) {
-                System.out.print(test[i][j]+"\t");
-            }
-            System.out.println();
-        }
-
+        System.out.println(arr);
+        System.out.println();
+        arr.prettyPrint();
 
     }
 }
