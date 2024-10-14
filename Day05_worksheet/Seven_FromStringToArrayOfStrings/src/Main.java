@@ -2,7 +2,7 @@ public class Main {
 
     static String[] split(String s, int n) {
         String[] arr = new String[(s.length() / n) + (s.length() % n == 0 ? 0 : 1)];
-
+    // add error check
         for (int i = 0; i < arr.length; i++) {
             if ((i + n) + n >= s.length()) {
                 arr[i] = s.substring(i * n, s.length());
