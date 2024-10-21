@@ -3,6 +3,10 @@ public class MobilePhone extends OldPhone{
     private String[] numbersCalled = new String[10];
     private int index = 0;
 
+    public MobilePhone(String brand) {
+        super(brand);
+    }
+
     public void ringAlarm(String alarm) {
         System.out.println("Ring alarm: " + alarm);
     }
