@@ -23,7 +23,7 @@ public class MobilePhone extends OldPhone{
 
         if (numbersCalled.length == MEMORY_SIZE) {
             numbersCalled[index] = number;
-            index = (index + 1) % 10;
+            index = (index + 1) % numbersCalled.length;
         }
     }
 
