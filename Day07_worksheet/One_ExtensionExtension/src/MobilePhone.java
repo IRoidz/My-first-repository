@@ -1,10 +1,12 @@
 public class MobilePhone extends OldPhone{
 
-    private String[] numbersCalled = new String[10];
+    private String[] numbersCalled;
+    private static final int MEMORY_SIZE = 10;
     private int index = 0;
 
     public MobilePhone(String brand) {
         super(brand);
+        numbersCalled = new String[MEMORY_SIZE];
     }
 
     public void ringAlarm(String alarm) {
@@ -19,7 +21,7 @@ public class MobilePhone extends OldPhone{
     public void call(String number) {
         super.call(number);
 
-        if (numbersCalled.length == 10) {
+        if (numbersCalled.length == MEMORY_SIZE) {
             numbersCalled[index] = number;
             index = (index + 1) % 10;
         }
