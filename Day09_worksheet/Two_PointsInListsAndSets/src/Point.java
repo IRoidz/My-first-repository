@@ -48,15 +48,11 @@ public class Point {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Point)) return false;
-        Point point = (Point) o;
-        return x == point.x && y == point.y;
+    public boolean equals(Object other) {
+        if (other instanceof Point) {
+            return x == ((Point) other).x && y == ((Point) other).y;
+        }
+        return false;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(x, y);
-    }
 }
