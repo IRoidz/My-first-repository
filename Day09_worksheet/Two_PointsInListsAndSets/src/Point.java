@@ -4,7 +4,7 @@ import java.util.Objects;
  * Implementation of the geometrical concept of a point in two dimensions.
  * Provides methods to access the coordinates as well as to move a point.
  */
-public class Point {
+public class Point implements Comparable<Point> {
     private int x;
     private int y;
 
@@ -49,10 +49,23 @@ public class Point {
 
     @Override
     public boolean equals(Object other) {
-        if (other instanceof Point) {
-            return x == ((Point) other).x && y == ((Point) other).y;
+        if (!(other instanceof Point)) {
+            return false;
         }
-        return false;
+        return this.x == ((Point) other).x && this.y == ((Point) other).y;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
+    }
+
+
+    @Override
+    public int compareTo(Point o) {
+        if (this.x != o.x) {
+            return Integer.compare(this.x, o.x);
+        }
+        return Integer.compare(this.y, o.y);
+    }
 }
