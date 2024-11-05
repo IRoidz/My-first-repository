@@ -38,7 +38,7 @@ public class FibonacciTester {
                     FibonacciTry1 fib = new FibonacciTry1();
                     long expected = 1836311903;
                     long actual = fib.fib(46);
-                });
+        });
     }
 
     @Test
@@ -48,7 +48,7 @@ public class FibonacciTester {
                     FibonacciTry1 fib = new FibonacciTry1();
                     long expected = 1836311903;
                     long actual = fib.fib(46);
-                });
+        });
     }
 
 }

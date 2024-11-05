@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class PersonTest {
+public class PersonTester {
 
     @Test
     public void testGetInitials_NormalName() {
@@ -12,4 +12,5 @@ public class PersonTest {
         String expected = "JD";
         assertEquals(expected, actual);
     }
+
 }
